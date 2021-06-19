@@ -1,4 +1,4 @@
-import galleryItems from './js-files/gallery-items.js';
+import galleryItems from './gallery-items.js';
 
 const galleryContainer = document.querySelector('.gallery');
 
@@ -116,7 +116,10 @@ function onArrowRight() {
   } else {
     currentIndex += 1;
   }
-  lightBoxImgContent(galleryItems[currentIndex].original, galleryItems[currentIndex].description);
+  lightBoxImgContent(
+    galleryItems[currentIndex].original,
+    galleryItems[currentIndex].description,
+  );
 }
 
 function onArrowLeft() {
@@ -125,5 +128,8 @@ function onArrowLeft() {
   } else {
     currentIndex -= 1;
   }
-  lightBoxImgContent(galleryItems[currentIndex].original, galleryItems[currentIndex].description);
+  lightBoxImgContent(
+    galleryItems[currentIndex].original,
+    galleryItems[currentIndex].description,
+  );
 }

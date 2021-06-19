@@ -1,2 +1,2 @@
 import './sass/main.scss';
-import './gallery';
+import './js-files/gallery.js';
